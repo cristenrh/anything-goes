@@ -1,0 +1,29 @@
+.cls-1 {
+    fill: none;
+}
+
+.cls-2 {
+    isolation: isolate;
+}
+
+.cls-3 {
+    mix-blend-mode: multiply;
+    opacity: 0.3;
+}
+
+.cls-4 {
+    clip-path: url(#clip-path);
+}
+
+.cls-5 {
+    fill: #fff;
+}
+
+.cls-6 {
+    clip-path: url(#clip-path-3);
+}
+
+.cls-7 {
+    fill: #e82017;
+}
+

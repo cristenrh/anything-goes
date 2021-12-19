@@ -1,0 +1,30 @@
+import React from 'react';
+import './App.css';
+
+import Cover from './components/cover/cover.component';
+import Songs from './components/songs/songs.component';
+import Cast from './components/cast/cast.component';
+import Crew from './components/crew/crew.component';
+import Navbar from './components/navbar/navbar.component';
+import Photos from './components/photos/photos.component';
+import Acknowledge from './components/acknowledgements/acknowledge';
+import Profiles from './components/profiles/profiles';
+import Footer from './components/footer/footer';
+
+function App() {
+  return (
+    <div className="App">
+      <Navbar />
+      <Cover />
+      <Songs />
+      <Cast/>
+      <Crew/>
+      <Profiles/>
+      <Photos/>
+      <Acknowledge />
+      <Footer></Footer>
+    </div>
+  );
+}
+
+export default App;

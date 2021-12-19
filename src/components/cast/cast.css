@@ -1,0 +1,70 @@
+li {
+    list-style: none;
+}
+section {
+    display: flex;                     
+    align-items: baseline;            
+    margin-bottom: 10px;
+  }
+
+  section p {
+      font-size: 15px;
+  }
+  
+  section > * {
+    padding: 0;
+    margin: 0;
+  }
+  span {
+    flex: 1;                         
+    overflow: hidden;                 
+  }
+
+  .castMembers, 
+  .crewMembers, 
+  .profiles {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .castMembers a, 
+  .crewMembers a, 
+  #cover a {
+    color: var(--ag-blue);
+    text-decoration: none;
+}
+
+.castMembers a:not(:last-child):after{
+  content: " / ";
+}
+
+.castMembers a:not(:last-child):before{
+  content: " 😎  "; 
+  color: blue;
+  padding-right: 2px;
+}
+.castMembers a:nth-child(2):before{
+  
+   content: "📣 ";
+  color: blue;
+  padding-right: 2px;
+}
+
+.key {
+text-align: left;
+}
+.crewMembers a:not(:last-child):after  {
+  content: ", "
+}
+
+.castMembers a:hover, .castMembers a:active,
+.crewMembers a:hover, .crewMembers a:active {
+  text-decoration: underline;
+}
+
+  @media only screen and (max-width:600px) {
+  .castMembers, .songs, .crewMembers, .profiles  {
+    min-width: 350px;
+    max-width: 475px;
+}
+  }

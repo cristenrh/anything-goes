@@ -1,0 +1,131 @@
+.header {
+    color: white;
+    background: var(--ag-blue);
+    display: flex;
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Chicle';
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+
+    a:hover,
+    a:active,
+    .active {
+      color: var(--lightblue);
+      cursor: pointer;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+.option {
+    align-items: center;
+    display: flex;
+    line-height: 1.5;
+    padding: 0.2rem 0;
+    position: relative;
+  }
+
+  .mobile-menu {
+    display: none;
+}
+
+.nav-options {
+    cursor: pointer;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    list-style-type: none;
+    text-decoration: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.scrolling-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #carnav {
+    position: relative;
+    width: 120px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .header {
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        font-size: 24px;
+    }
+
+    .navbar-brand {
+        display: block;
+        padding-left: 12px;
+    }
+
+    .navbar-brand a {
+        color: white;
+        font-style: italic;
+        text-decoration: none;
+        font-size: 32px;
+    }
+
+
+    .mobile-menu {
+        display: block;
+        cursor: pointer;
+        color: var(--lightblue);
+        padding-right: 12px;
+    }
+
+    .menu-icon {
+      width: 45px;
+      height: 45px;
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .option a {
+      width: 100%;
+      padding: .8rem 1rem;
+      text-align: left;
+  }
+
+
+    .nav-options {
+      display: flex;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      right: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      flex-direction: column;
+      list-style-type: none;
+      grid-gap: 0px;
+    }
+
+    .nav-options.open {
+      background:var(--ag-blue);
+      right: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 3;
+      align-content: center;
+      padding-left: 0px;
+    }
+
+  }

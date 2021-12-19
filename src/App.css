@@ -1,0 +1,109 @@
+:root {
+  --darkred: #C41C1C;
+  --logored:  #a82424;
+  --slategrey: #222;
+  --gold:  #cea74b;
+  --ag-blue: #004c6b;
+  --lightblue: #54b3c6;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html, body, #root, .App {
+  overflow-x:hidden;
+  position: relative; 
+  background-color: var(--lightblue);
+} 
+
+.App {
+  text-align: center;
+}
+
+
+  @font-face {
+    font-family: 'Chicle';
+    font-style: cursive;
+    font-weight: normal;
+    src: local("Chicle-Regular"),
+      url("./Chicle-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Grease';
+    font-weight: normal;
+    src: local("grease"),
+      url("./grease__.ttf") format("truetype");
+    font-weight: normal;
+  }
+
+
+  @font-face {
+    font-family: 'Cabin';
+    font-weight: 700;
+    src: local("cabin"),
+      url("./assets/Cabin-Bold.ttf") format("truetype");
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Cabin';
+    font-weight: 600;
+    src: local("cabin"),
+      url("./assets/Cabin-SemiBold.ttf") format("truetype");
+    font-weight: normal;
+  }
+
+
+
+  h1 {
+    color: var(--ag-blue);
+      font-family:  'Chicle';
+      font-size: 45px;
+      font-style: italic;
+      font-weight: 200;
+
+  }
+
+  .title {
+    font-family:  'Chicle';
+    font-weight: 200;
+     color: var(--ag-blue);
+    font-size: 110px;
+    font-style: italic;
+}
+
+
+    h2 {
+        font-family: 'Grease';
+        font-weight: 200;
+        color: red;
+    }
+
+ div#songs, 
+ div#profiles, 
+ div#cast, 
+ div#photos, 
+ div#acknowledgements{
+      margin-top: 50px;
+      height: 50px;
+      width: 50px;
+  }
+
+@media screen and (max-width: 600px) {
+    h1 {
+      font-size: 35px;
+  }
+
+  div#songs, 
+ div#profiles, 
+ div#cast, 
+ div#photos, 
+ div#acknowledgements{
+      margin-top: 50px;
+      height: 85px;
+      width: 50px;
+  }
+}
